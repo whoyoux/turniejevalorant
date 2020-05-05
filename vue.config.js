@@ -4,7 +4,7 @@ module.exports = {
   transpileDependencies: ["vuetify"],
   devServer: {
     proxy: {
-      "http://turniejevalorant.herokuapp.com/api": {
+      "https://turniejevalorant.herokuapp.com/api": {
         target: "http://localhost:3000",
       },
     },
