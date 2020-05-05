@@ -19,7 +19,7 @@ export default {
       list_of_tournaments: []
     };
   },
-  created() {
+  mounted() {
     this.list_of_tournaments = [];
     axios
       .get(this.$store.state.basicURL + "/api/tournament/getAllConfirmed")

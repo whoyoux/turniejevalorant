@@ -6,8 +6,13 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     basicURL: "https://turniejevalorant.herokuapp.com",
+    lastTournamentId: "",
   },
-  mutations: {},
+  mutations: {
+    setLastTournamentId(state, id) {
+      state.lastTournamentId = id;
+    },
+  },
   actions: {},
   modules: {},
 });

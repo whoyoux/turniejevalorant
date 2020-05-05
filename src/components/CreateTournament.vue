@@ -162,6 +162,7 @@ export default {
             }
           );
           if (result.status === 200) {
+            this.$store.commit("setLastTournamentId", result._id);
             this.$router.push("/verify");
           }
         } catch (err) {
